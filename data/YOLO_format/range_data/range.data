@@ -1,0 +1,4 @@
+classes = 8
+train = range_data/range.txt
+names = range_data/range.names
+backup = backup/

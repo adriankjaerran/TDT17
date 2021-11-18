@@ -1,0 +1,4 @@
+classes = 8
+train = intensity_data/intensity.txt
+names = intensity_data/intensity.names
+backup = backup/

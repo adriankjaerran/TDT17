@@ -1,0 +1,4 @@
+classes = 8
+train = all_data/all_data.txt
+names = data/all_data.names
+backup = backup/

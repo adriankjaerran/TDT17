@@ -1,0 +1,4 @@
+classes = 8
+train = ambient_data/ambient.txt
+names = ambient_data/ambient.names
+backup = backup/

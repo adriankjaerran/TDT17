@@ -127,4 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-.zip
+**/*.zip
+**/*.jpg
+**/*.PNG
+data/COCO
+data/LiDAR-videos
+*000*

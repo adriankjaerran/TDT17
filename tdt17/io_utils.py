@@ -31,6 +31,33 @@ def get_files_in_directory(
     return filenames
 
 
+def move_files_to_directory(
+    from_path: str,
+    to_path: str,
+    move: bool = False,
+    verbose=True,
+    start: Optional[str] = None,
+    contains_any: Optional[List[str]] = None,
+    contains_all: Optional[List[str]] = None,
+    contains_none: Optional[List[str]] = None,
+    end: Optional[str] = None,
+):
+    file_paths = get_files_in_directory(from_path, start, contains_any,
+                                        contains_all, contains_none, end)
+
+    for fp in file_paths:
+        if verbose:
+            print(fp)
+        if move:
+            os.rename(os.path.join(from_path, fp), os.path.join(to_path, fp))
+
+    if not move:
+        print(f"Found {len(file_paths)} files")
+        print("To move files set move = True")
+    else:
+        print(f"Moved {len(file_paths)} files")
+
+
 def remove_files_in_directory(
     dir_path: str,
     remove: bool = False,
