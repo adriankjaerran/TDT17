@@ -20,7 +20,9 @@ env_path = find_dotenv(filename=".env")
 
 class Paths:
     ROOT = Path(env_path).parent
-    PLAACE = ROOT / "plaace"
+    TDT17 = ROOT / "tdt17"
     DATA = ROOT / "data"
     LIDAR = DATA / "LiDAR-videos"
     MODELS = ROOT / "models"
+    VIDEOS = ROOT / "videos"
+    PREDICTIONS = ROOT / "predictions"

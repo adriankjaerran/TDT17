@@ -34,7 +34,7 @@ def get_files_in_directory(
 def move_files_to_directory(
     from_path: str,
     to_path: str,
-    move: bool = False,
+    move: Optional[bool] = False,
     verbose=True,
     start: Optional[str] = None,
     contains_any: Optional[List[str]] = None,
@@ -87,7 +87,7 @@ def remove_files_in_directory(
 
 def rename_files_in_directory(
     dir_path: str,
-    replace: Dict[str, str],
+    replace: Optional[Dict[str, str]],
     perform_replacement: False,
     start: Optional[str] = None,
     contains_any: Optional[List[str]] = None,
