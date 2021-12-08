@@ -133,3 +133,4 @@ dmypy.json
 data/COCO
 data/LiDAR-videos
 *000*
+**/*.mp4
